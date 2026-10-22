@@ -36,3 +36,14 @@ span.emph { font-weight: 600; }
 .skip-link:focus { position: static; display: inline-block; margin-bottom: 16px; }
 @media (max-width: 520px) { body { margin: 24px auto; padding: 0 20px; } h1 { font-size: 26px; } .portrait { width: 80px; } .site-header { gap: 16px; padding-bottom: 20px; } .site-nav { justify-content: flex-start; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Compact research streams retain the site's text-first layout. */
+.research-intro { color: var(--muted); font-size: 15px; }
+.research-stream { margin: 20px 0; }
+.research-stream h3 { font-size: 16px; margin: 0 0 5px; color: var(--accent); }
+.research-stream p { margin: 0 0 6px; }
+.research-stream .research-papers { font-size: 13px; line-height: 1.65; }
+.research-all { font-size: 14px; }
+
+.research-branch { margin: 14px 0 0; }
+.research-branch h4 { font-size: 15px; font-weight: 600; margin: 0 0 5px; }

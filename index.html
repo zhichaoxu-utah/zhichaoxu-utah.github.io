@@ -18,8 +18,7 @@
         <main id="main">
         <h2>About me</h2>
         <p>I am currently a ML Researcher at Apple Foundation Model. I try to understand language models' mechanisms, behaviors and how to better utilize them.
-        <p>My recent research focus has been on <span class="it"> Agentic Reinforcement Learning</span>, such as tool-integrated reasoning and credit assignment in long-horizon RL. Check out my recent works about <a href="https://aclanthology.org/2026.acl-long.69/"> RL with Skill Library</a>
-        <a href="https://aclanthology.org/2026.findings-eacl.247/"> credit assignment in GRPO</a>, <a href="https://aclanthology.org/2026.eacl-short.32/">RL for machine learning agents</a> and <a href="https://openreview.net/forum?id=mZ0gGlXelF"> improving reasoning faithfulness of RAG agent</a>. Full list of publications can be found <a href="https://scholar.google.com/citations?user=LmLtV_kAAAAJ&hl=en">@Google Scholar</a>.
+        <p>My research focuses on evaluating and improving language models and agents, especially on long-horizon and hard-to-verify tasks.</p>
         <p> I completed my Ph.D. study from <a href="https://nlp.cs.utah.edu/">UtahNLP</a>, advised by <a href="https://svivek.com/"> Prof. Vivek Srikumar</a> and <a href="https://www.sci.utah.edu/~beiwang/"> Prof. Bei Wang</a>.
         <!-- <p> During my Ph.D., I worked on deep learning methods for NLP and Information Retrieval, involving retrieval-augmentioned generation, in-context learning, decoding methods for natural language generation, dense retrieval, recommendation and learning-to-rank. -->
         <p> I am open to collaborations, feel free to reach out to me at <span id="email-placeholder"></span>.
@@ -32,6 +31,53 @@
             el.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
         </script>
         <p class="social-links"> <a href="https://twitter.com/zhichaoxu_ir">@Twitter</a> <a href="https://bsky.app/profile/zhichaoxu-ir.bsky.social">@BlueSky</a> <a href="https://scholar.google.com/citations?user=LmLtV_kAAAAJ&hl=en">@Google Scholar</a>
+
+        <section id="research" class="research-streams" aria-labelledby="research-heading">
+            <h2 id="research-heading">Research</h2>
+            <p class="research-intro">Two current questions guide my work:</p>
+            <ol class="research-questions">
+                <li>How can we construct <strong>reliable and challenging benchmarks</strong> that measure the capabilities of LLMs and agents?</li>
+                <li>How can we <strong>improve learning using reinforcement learning</strong>, across long-horizon agentic tasks and RL from human feedback (RLHF)?</li>
+            </ol>
+            <div class="research-stream">
+                <h3>Evaluation</h3>
+                <p>How can we construct reliable and challenging benchmarks that measure the capabilities of LLMs and agents?</p>
+                <p class="research-papers"><a href="https://aclanthology.org/2024.findings-emnlp.901/">Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression</a></p>
+                <p class="research-papers"><a href="https://aclanthology.org/2024.findings-emnlp.113/">Multi-dimensional Evaluation of Empathetic Dialogue Utterances</a></p>
+            </div>
+            <div class="research-stream">
+                <h3>Reinforcement Learning</h3>
+                <p>How can we improve learning using RL? I study two connected directions:</p>
+                <div class="research-branch">
+                <h4>Long-horizon agentic tasks</h4>
+                <p>How can agents learn effective strategies over long horizons? My work studies credit assignment, tool use, and learning reusable skills.</p>
+                <p class="research-papers"><a href="https://aclanthology.org/2026.findings-eacl.247/">SALT: Step-level Advantage Assignment for Long-horizon Agents via Trajectory Graph</a></p>
+                <p class="research-papers"><a href="https://aclanthology.org/2026.acl-long.69/">Reinforcement Learning for Self-Improving Agent with Skill Library</a></p>
+                <p class="research-papers"><a href="https://aclanthology.org/2026.eacl-short.32/">Learning to Ideate for Machine Learning Engineering Agents</a></p>
+                            </div>
+                <div class="research-branch">
+                <h4>RLHF</h4>
+                <p>How can we improve learning from human feedback as models become more capable? I am exploring how evaluation, data collection, and reward learning can evolve together for hard-to-verify tasks.</p>
+                <p class="research-papers"><a href="https://openreview.net/forum?id=mZ0gGlXelF">Beyond Correctness: Rewarding Faithful Reasoning in Retrieval-Augmented Generation</a></p>
+                <p class="research-papers"><a href="https://aclanthology.org/2026.sigdial-1.59/">PERSONAJUDGE: Simulating Individual Human Preference Judgments with Human-Centered Demonstration Data</a></p>
+                            </div>
+            </div>
+            <div class="research-stream">
+                <h3>Efficient LLM Systems</h3>
+                <p>How can we improve the efficiency of LLM systems? My work explores speculative decoding and prompt routing to balance quality, latency, and cost.</p>
+                <p class="research-papers"><a href="https://arxiv.org/abs/2610.07780">APEX: Speculate Smarter, not Deeper</a></p>
+                <p class="research-papers"><a href="https://aclanthology.org/2025.emnlp-industry.170/">IPR: Intelligent Prompt Routing with User-Controlled Quality-Cost Trade-offs</a></p>
+            </div>
+            <div class="research-stream">
+                <h3>Retrieval Modeling &amp; Efficiency</h3>
+                <p>How can we build effective retrievers and rerankers with efficient training and inference? My work spans sparse retrieval, model architectures, and scalable training systems.</p>
+                <p class="research-papers"><a href="https://dl.acm.org/doi/10.1145/3805712.3809869">LACONIC: Dense-Level Effectiveness for Scalable Sparse Retrieval via a Two-Phase Training Curriculum</a></p>
+                <p class="research-papers"><a href="https://aclanthology.org/2025.ijcnlp-long.7/">CSPLADE: Learned Sparse Retrieval with Causal Language Models</a></p>
+                <p class="research-papers"><a href="https://arxiv.org/abs/2608.00916">Tevatron Meets Megatron: Expert-Parallel LLM Reranker Training on an Academic Budget</a></p>
+                <p class="research-papers"><a href="https://arxiv.org/abs/2608.08809">Tevatron-Elastic: A Unified Abstraction for Training Elastic Retrievers and Rerankers</a></p>
+            </div>
+            <p class="research-all"><a href="pubs.html">All publications, by year ↗</a></p>
+        </section>
 
         <h2>Recent News</h2>
         <ul>
@@ -90,7 +136,7 @@
 
         <h2>Academic Services</h2>
         <ul>
-            <li> Conference Reviewer: ACL, ACL ARR, CCL, TheWebConf, SIGIR, SIGIR-AP, ICTIR, WSDM, RecSys, AAAI
+            <li> Conference Reviewer: ICLR, ACL, ACL ARR, CCL, TheWebConf, SIGIR, SIGIR-AP, ICTIR, WSDM, RecSys, AAAI
             </li>
             <li> Journal Reviewer: <br>ACM Transactions on Information Systems (TOIS),<br>IEEE Transactions on Affective Computing (Affective Compute), <br>IEEE Transactions on Artificial Intelligence (T-AI), <br>Computational Linguistics (CL), <br>Artificial Intelligence Review (AIR)
             </li>
